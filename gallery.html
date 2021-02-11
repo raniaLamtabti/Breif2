@@ -180,7 +180,7 @@
                     </div>
                 </button>
                 <div class="myModale" id="modalebook1">
-                    <button class="close" onclick="modaleHide()">
+                    <button class="close" onclick="modaleHide('modalebook1')">
                         <img src="images/close (1).svg" alt="" srcset="">
                     </button>
                     <div class="topInfo">
@@ -218,7 +218,7 @@
                     </div>
                 </div>
                 <div class="myModale" id="modalebook2">
-                    <button class="close" onclick="modaleHide()">
+                    <button class="close" onclick="modaleHide('modalebook2')">
                         <img src="images/close (1).svg" alt="" srcset="">
                     </button>
                     <div class="topInfo">
@@ -315,8 +315,8 @@
             $("#modale" + clicked_id).addClass("myModaleShow");
         }
 
-        function modaleHide() {
-            $("#modale" + clicked_id).removeClass("myModaleShow");
+        function modaleHide(clicked_id) {
+            $("#" + clicked_id).removeClass("myModaleShow");
         }
     </script>
 </body>
